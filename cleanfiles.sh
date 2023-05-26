@@ -6,3 +6,5 @@ Find and delete files older than 90 days
 find $(pwd) -mtime +90 -exec ls -l {} \;
 #delete old files
 find . -mtime +90 -exec mv {} {}.old \;
+#remove files
+find . -mtime +90 -exec rm {} \;
